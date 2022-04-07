@@ -2,7 +2,6 @@
 
 source .env
 
-echo "key ${TOKEN}"
 # TOKEN= #gitlab token
 API_URL=https://gitlab.com/api/v4/projects
 OLD_BRANCH=master
