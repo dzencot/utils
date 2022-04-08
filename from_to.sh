@@ -43,8 +43,9 @@ for i in $REPO_PATHS; do
   url=$(echo "$response" | jq -r '.ssh_url_to_repo')
   echo URL: $url
 
-  git remote rename origin old-origin
-  git remote add origin $url
+  cd $DESTINATION_PATH
+
+  git remote set-url origin $url
   git push -u origin --all
   git push -u origin --tags
 
