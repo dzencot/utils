@@ -12,6 +12,12 @@ SOURCE_PATH=$1
 DESTINATION_PATH=$2
 NAMESPACE_ID=$3
 
+if [ -z "$NAMESPACE_ID" ]
+then
+  echo "Group id is empty"
+  exit 1
+fi
+
 CURPATH=$(pwd)
 REPO_PATHS=$(ls $SOURCE_PATH)
 total=$(echo "$REPO_PATHS" | wc -l)
