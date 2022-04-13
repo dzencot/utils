@@ -13,7 +13,7 @@ for i in $REPO_PATHS; do
   echo "============================================================================================"
   echo "repo $count/$total"
   echo $i
-  cd $CURRENT_EXERCICE_PATH/$i
+  cd $SOURCE_PATH/$i
 
   git add .
   git commit -m "$COMMIT_NAME"
