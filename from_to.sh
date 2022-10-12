@@ -3,7 +3,7 @@
 source .env
 
 # TOKEN= #gitlab token
-API_URL=https://gitlab.com/api/v4/projects
+API_URL=https://gitlab.hexlet.io/api/v4/projects
 OLD_BRANCH=master
 NEW_BRANCH=main
 NAMESPACE=hexlethq/exercises/en
@@ -30,14 +30,16 @@ for i in $REPO_PATHS; do
   echo "============================================================================================"
   echo "repo $count/$total"
   echo $i
-  CURRENT_EXERCICE_PATH=$SOURCE_PATH/$i
+  CURRENT_EXERCISE_PATH=$SOURCE_PATH/$i
 
-  cd $CURRENT_EXERCICE_PATH
+  cd $CURRENT_EXERCISE_PATH
+
+  echo Current exercise path: $CURRENT_EXERCISE_PATH
 
   git checkout main
   git pull
 
-  cp $CURRENT_EXERCICE_PATH $DESTINATION_PATH/$i -r
+  cp $CURRENT_EXERCISE_PATH $DESTINATION_PATH/$i -r
 
   response=$(curl -s --request POST --header "PRIVATE-TOKEN: $TOKEN" --url "$API_URL?name=$i&namespace_id=$NAMESPACE_ID")
   url=$(echo "$response" | jq -r '.ssh_url_to_repo')
