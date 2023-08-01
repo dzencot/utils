@@ -1,0 +1,41 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Что такое `namespace` в TypeScript?
+    answers:
+      wrong:
+      - Область видимости для переменных и функций
+      - Механизм, заменяющий импорт в TypeScript
+      correct:
+      - Механизм, позволяющий группировать модули в логически связанные группы
+
+  question-2:
+    type: answers
+    question: Выберите правильные утверждения
+    answers:
+      wrong:
+      - Синтаксис импорта модулей в TypeScript не похож на синтаксис импорта модулей в JavaScript
+      - В TypeScript невозможно указать псевдоним для импортируемой сущности
+      correct:
+      - Система модулей TypeScript совместима с системой модулей JavaScript
+      - В TypeScript есть специальный синтаксис для импорта типов
+
+  question-3:
+    type: answers
+    question: Как объявить пространство имен в TypeScript?
+    answers:
+      wrong:
+      - |
+        ```typescript
+        function bar() { ... }
+        ```
+      - |
+        ```typescript
+        class baz { ... }
+        ```
+      correct:
+      - |
+        ```typescript
+        namespace foo { ... }
+        ```

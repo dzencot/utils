@@ -1,0 +1,56 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Будет ли ошибка компиляции этого кода и по какой причине?
+
+      ```typescript
+        class User {
+          firstname: string;
+          phone: string | number;
+
+          constructor(name: string, phone: string) {
+            this.name = name;
+            this.phone = phone;
+          }
+        }
+      ```
+    answers:
+      wrong:
+      - В конструкторе поле `phone` нельзя присвоить, так как не соответствует тип
+      - В поля нельзя указывать литеральные типы
+      correct:
+      - Ошибки не будет
+
+  question-2:
+    type: answers
+    question: Выберите верные утверждения
+    answers:
+      wrong:
+      - Нельзя создавать классы без указания полей
+      - В методах класса можно добавлять новые поля, которые не были описаны в самом классе
+      correct:
+      - В классе не обязательно указывать конструктор
+      - Поля и свойства — это не одно и то же
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        class User {
+          firstName: %{type};
+          sureName: %{type};
+
+          constructor(firstName: string, sureName: string) {
+            this.firstName = firstName;
+            this.sureName = sureName;
+          }
+        }
+      ```
+
+    answers:
+      type: string

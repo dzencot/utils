@@ -1,0 +1,64 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Какие типы включают в себя значение `true`?
+    answers:
+      wrong:
+      - |
+        `string`
+      - |
+        `number`
+      - |
+        `never`
+      correct:
+      - |
+        `boolean`
+      - |
+        `unknown`
+
+  question-2:
+    type: answers
+    question: Выберите код, где происходит восходящее приведение типа
+    answers:
+      wrong:
+      - |
+        ```typescript
+          type Hello = 'Hello';
+          type Hi = 'Hi!';
+          type Greeting = Hello | Hi;
+
+          const message: Hello = 'Hello';
+        ```
+      correct:
+      - |
+        ```typescript
+          const message: string = 'Hello';
+        ```
+
+      - |
+        ```typescript
+          type Hello = 'Hello';
+          type Hi = 'Hi!';
+          type Greeting = Hello | Hi;
+
+          const message: Greeting = 'Hello';
+        ```
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        type NumberGrades = 2 | 3 | 4 | 5;
+        type StringGrades = 'Неудовлетворительно' | 'Удовлетворительно' | 'Хорошо' | 'Отлично' 
+        type Grades = NumberGrades | %{type};
+
+        const grade1: Grades = 4;
+        const grade2: Grades = 'Отлично';
+      ```
+
+    answers:
+      type: StringGrades

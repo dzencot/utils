@@ -1,0 +1,70 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Выберите правильные способы получить поле `message` в методе `getMessage()`
+
+      ```typescript
+        class Greeting {
+          protected static message = 'hello!';
+        }
+
+        class Hello extends Greeting {
+          getMessage() {
+            // ?
+          }
+        }
+      ```
+
+    answers:
+      wrong:
+        - |
+          `this.message`
+        - |
+          `message`
+        - Ни один из способов не работает, так как поле защищено
+      correct:
+        - |
+          `Greeting.message`
+        - |
+          `Hello.message`
+
+  question-2:
+    type: answers
+    question: |
+      Есть ли ошибка и какая в коде ниже?
+
+      ```typescript
+        class Greeting {
+          private static message = 'hello!';
+
+          updateMessage(newMessage: string) {
+            Greeting.message = newMessage;
+          }
+        }
+      ```
+
+    answers:
+      wrong:
+        - В методе `updateMessage()` меняется статическое поле, чего делать нельзя
+        - В методе `updateMessage()` не правильно указано обращение к полю, должно быть `this.message` 
+      correct:
+        - Ошибки нет
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        class User {
+          %{static} type = 'user';
+        }
+
+        console.log(User.type); // => 'user'
+      ```
+
+    answers:
+      static: static

@@ -1,0 +1,40 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Что такое типизация функции в TypeScript?
+    answers:
+      wrong:
+      - Определение имени функции
+      - Определение количества параметров функции
+      correct:
+      - Определение типов параметров и возвращаемого значения функции
+
+  question-2:
+    type: answers
+    question: Как объявить тип стрелочной функции принимающей строку и возвращающей число?
+    answers:
+      wrong:
+      - |
+        ```typescript
+        (n: number) => string;
+        ```
+      - |
+        ```typescript
+        (n: string) => string;
+        ```
+      correct:
+      - |
+        ```typescript
+        (n: string) => number;
+        ```
+
+  question-3:
+    type: answers
+    question: Как можно отличить определение стрелочной функции от описания типа этой же функции?
+    answers:
+      wrong:
+      - Это одно и то же
+      - По ключевому слову `type` при создании типа
+      correct:
+      - Определение типа идет после знака `:`

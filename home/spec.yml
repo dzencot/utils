@@ -1,0 +1,11 @@
+---
+lesson:
+  name: Введение
+  goal: Познакомиться с курсом
+  links:
+    - name: Профессия Фронтенд-разработчик
+      url: "https://ru.hexlet.io/programs/frontend"
+    - name: Node.js-разработчик
+      url: "https://ru.hexlet.io/programs/backend"
+    - name: Как устроен TypeScript и зачем его используют
+      url: "https://ru.hexlet.io/blog/posts/vse-chto-nuzhno-znat-novichku-o-typescript-ischerpyvayuschiy-gayd"

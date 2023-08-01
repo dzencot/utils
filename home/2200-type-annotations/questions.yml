@@ -1,0 +1,61 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Какой тип будет у `arr`?
+
+      ```typescript
+        const arr = [1, 2, 3];
+      ```
+
+    answers:
+      wrong:
+      - |
+        `any[]`
+      - |
+        `Array`
+      - Нет типа
+      correct:
+      - |
+        `number[]`
+
+  question-2:
+    type: answers
+    question: |
+      Какой тип будет у `arr`?
+
+      ```typescript
+        const arr = [];
+      ```
+
+    answers:
+      wrong:
+      - |
+        `number[]`
+      - |
+        `Array`
+      - Нет типа
+      correct:
+      - |
+        `any[]`
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```javascript
+        const numbers = [1, 2, 3, 4];
+
+        function getEvenNumbers(numbers: %{type}) {
+          return numbers.filter((n) => n %% 2 === 0);
+        }
+
+        console.log(getEvenNumbers(numbers)); // => [2, 4]
+      ```
+
+    answers:
+      type: number[]
+

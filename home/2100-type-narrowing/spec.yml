@@ -1,0 +1,7 @@
+---
+lesson:
+  name: Narrowing
+  goal: Познакомиться с сужением типов
+  links:
+    - name: Официальная документация
+      url: "https://www.typescriptlang.org/docs/handbook/2/narrowing.html"

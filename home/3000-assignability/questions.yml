@@ -1,0 +1,36 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Что нужно делать в первую очередь при ошибке `Type X is not assignable to type Y.` в вызове функции?
+    answers:
+      wrong:
+      - Привести тип передаваемого значения к типу `any`
+      - Отключить проверку типов
+      correct:
+      - Проверить какой тип передается в функцию и какой ожидается
+
+  question-2:
+    type: answers
+    question: Почему не стоит использовать сразу тип `any`?
+    answers:
+      wrong:
+      - Тип `any` может вызвать ошибку на этапе компиляции
+      - Современные разработчики никогда не используют `any`. Это считается дурным тоном 
+      correct:
+      - Тип `any` отключает проверку типа, в итоге теряется весь смысл использования TypeScript
+
+  question-4:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        let message: %{type};
+        const greeting: string = 'Hello, world!';
+        message = greeting;
+      ```
+
+    answers:
+      type: string

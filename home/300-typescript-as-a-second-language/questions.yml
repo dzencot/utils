@@ -1,0 +1,39 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Выберите верные утверждения
+    answers:
+      wrong:
+      - TypeScript добавляет новый функционал, который не будет работать в JavaScript
+      correct:
+      - TypeScript всегда можно заменить на JavaScript без потери функционала
+      - Код TypeScript преобразуется в код JavaScript
+  question-2:
+    type: answers
+    question: Выберите верные утверждения
+    answers:
+      wrong:
+      - Строгая типизация и статическая типизация — это одно и то же
+      correct:
+      - Строгая типизация говорит о том, насколько язык допускает автоматические преобразования типов
+      - При cтатической типизации тип переменной задается при ее инициализации
+  question-3:
+    type: answers
+    question: |
+      Какая ошибка в коде ниже?
+
+      ```typescript
+      function repeat(str: string, a: number) {
+        return str.repeat(a);
+      }
+
+      const result = repeat('a', '4');
+      ```
+    answers:
+      wrong:
+      - Ошибок нет
+      - Не указан тип для `result`
+      - Внутри `repeat()` рекурсивно вызывается эта же функция, что вызовет переполнение стека вызовов
+      correct:
+      - При вызове функции вторым параметром передана строка, а ожидается число

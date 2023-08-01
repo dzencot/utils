@@ -1,0 +1,48 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Для чего нужно пересечение типов?
+    answers:
+      wrong:
+      - Что бы получить новый тип, который содержит значения, подходящие под один из указанных типов
+      - Что бы получить новый тип, который не содержит значения, подходящие под ограничения обоих типов
+      correct:
+      - Что бы получить новый тип, который содержит значения, подходящие под ограничения обоих типов
+
+  question-2:
+    type: answers
+    question: Какой тип будет у переменной, значение которой не может существовать?
+    answers:
+      wrong:
+      - |
+        `undefined`
+      - |
+        `null`
+      - Такого типа не существует
+      correct:
+      - |
+        `never`
+
+  question-4:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        type Address = {
+          city: string;
+        }
+
+        type User = %{type} {
+          name: string;
+          gender: 'male' | 'female';
+          age: number;
+        }
+
+        const user1: User = { name: 'User', gender: 'male', age: 23, city: 'Moscow' };
+      ```
+
+    answers:
+      type: Address &

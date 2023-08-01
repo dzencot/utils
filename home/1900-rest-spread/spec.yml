@@ -1,0 +1,4 @@
+---
+lesson:
+  name: Rest и Spread
+  goal: Научиться использовать rest и spred операции в TypeScript

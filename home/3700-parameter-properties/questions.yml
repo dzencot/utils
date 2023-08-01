@@ -1,0 +1,69 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Каким качеством обладает свойство `password` в классе:
+
+      ```typescript
+        class User {
+          constructor(public username: string, private password: string) {}
+        }
+      ```
+
+    answers:
+      wrong:
+        - Защищенное
+        - Публичное
+        - Все перечисленные качества
+        - Ни одноиз перечисленных качеств
+      correct:
+        - Приватное
+
+  question-2:
+    type: answers
+    question: |
+      Какая ошибка в коде ниже:
+
+      ```typescript
+        class User {
+          constructor(private username: string) {}
+
+          get username(): string {
+            return this.username;
+          }
+        }
+      ```
+
+    answers:
+      wrong:
+        - Метод `username()` возвращает приватное свойство
+        - Ошибки нет
+        - В конструкторе нет присваивания в свойство `username`
+      correct:
+        - Дублируется имя свойства `username` для поля и метода
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        class User {
+          constructor(%{protected} username: string) {}
+
+          get name(): string {
+            return `User ${this.username}`;
+          }
+        }
+
+        class Admin extends User {
+          get name(): string {
+            return `Admin ${this.username}`;
+          }
+        }
+      ```
+
+    answers:
+      protected: protected

@@ -1,0 +1,42 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Как определить тип, который включает множество строк и булевых значений?
+    answers:
+      wrong:
+      - |
+        `string & boolean`
+      - |
+        `string && boolean`
+      correct:
+      - |
+        `string | boolean`
+
+  question-2:
+    type: answers
+    question: С помощью какого оператора можно объединить типы?
+    answers:
+      wrong:
+      - |
+        `&`
+      - |
+        `&&`
+      correct:
+      - |
+        `|`
+
+  question-4:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```javascript
+        type SomeType = number | %{type};
+        const value1: SomeType = 1;
+        const value2: SomeType = true;
+      ```
+
+    answers:
+      type: boolean

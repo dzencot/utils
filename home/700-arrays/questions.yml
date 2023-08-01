@@ -1,0 +1,46 @@
+---
+questions:
+  question-1:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```javascript
+      function toLowerArray(items: string[]): %{type} {
+        return items.map((s) => s.toLowerCase());
+      }
+      ```
+
+    answers:
+      type: string[]
+
+  question-2:
+    type: answers
+    question: Выберите верные утверждения
+    answers:
+      wrong:
+      - TypeScript не выводит типы массивов
+      correct:
+      - Массив — это составной тип данных
+      - В типе массива указывается тип элементов, которые хранятся в массиве
+
+  question-3:
+    type: answers
+    question: |
+      Как отсортировать элементы массива в TypeScript?
+    answers:
+      wrong:
+      - |
+        ```typescript
+        arr.order();
+        ```
+      - |
+        ```typescript
+        arr.shuffle();
+        ```
+      correct:
+      - |
+        ```typescript
+        arr.sort();
+        ```

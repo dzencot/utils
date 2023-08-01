@@ -1,0 +1,79 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Какая ошибка в коде ниже?
+
+      ```typescript
+        class Guest {
+          username = 'guest';
+        }
+
+        function printName(user: Guest) {
+          console.log(user.username);
+        }
+
+        const admin = { username: 'super user', isAdmin: true };
+
+        printName(admin);
+      ```
+    answers:
+      wrong:
+      - В функцию `printName()` передается значение с типом, который не ожидается функцией
+      - Не определен конструктор в классе
+      correct:
+      - Ошибки нет
+
+  question-2:
+    type: answers
+    question: |
+      Какой тип будет у поля `username`?
+
+      ```typescript
+        class Guest {
+          username = 'guest';
+        }
+      ```
+    answers:
+      wrong:
+      - |
+        `'guest'`
+      - |
+        `any`
+      - |
+        `undefined`
+      correct:
+      - |
+        `string`
+
+  question-3:
+    type: answers
+    question: |
+      Какая ошибка в коде ниже?
+
+      ```typescript
+        class User {
+          username: string;
+          private password: string;
+
+          constructor(username: string, password: string) {
+            this.username = username;
+            this.password = password;
+          }
+
+
+        }
+
+        function printName(user: User) {
+          console.log(user.username);
+        }
+
+        printName({ username: 'user', password: 'password' });
+      ```
+    answers:
+      wrong:
+      - В конструкторе изменяется приватное поле
+      - Ошибки нет
+      correct:
+      - В функцию `printName()` не передается экземпляр класса `User`

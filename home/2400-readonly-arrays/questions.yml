@@ -1,0 +1,48 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Как модификатор `readonly` влияет на объекты внутри массивов?
+    answers:
+      wrong:
+      - Модификатор запрещает изменять массив, а значит и объекты внутри массива
+      correct:
+      - Модификатор не запрещает изменять объекты внутри массива
+
+  question-2:
+    type: answers
+    question: |
+      Какая ошибка в этом коде?
+
+      ```typescript
+        const arr: readonly number[] = [1, 2, 3, 4, 5];
+
+        const first = arr.shift()
+
+        console.log(first); // => 1
+        console.log(arr); // => 2, 3, 4, 5
+      ```
+
+    answers:
+      wrong:
+      - Метод `shift()` не доступен для вызова в массиве для чтения
+      - Модификатор `readonly` не должен применяться при создании массивов с примитивными типами
+      correct:
+      - Метод `shift()` изменяет массив для чтения
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код, чтобы запретить изменение массива внутри функции:
+    text: |
+      ```javascript
+      const arr = [1, 2, 3, 4, 5];
+
+      function getEvenNums(numbers: %{first}) {
+        return numbers.filter((num) => num %% 2 === 0);
+      }
+      console.log(getEvenNums(arr));
+      ```
+
+    answers:
+      first: "readonly number[]"

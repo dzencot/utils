@@ -1,0 +1,51 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Какой тип будет у `arr`?
+
+      ```typescript
+        const arr = [['hello'], ['goodbye', 'bye']];
+      ```
+
+    answers:
+      wrong:
+      - |
+        `string[]`
+      - |
+        `Array`
+      - Нет типа
+      - Array<number[]>
+      correct:
+      - |
+        `string[][]`
+
+  question-2:
+    type: answers
+    question: Может ли массив содержать массивы разной длины?
+    answers:
+      wrong:
+      - Нет
+      - Да, если все элементы массива одного типа
+      correct:
+      - Да
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```javascript
+        const numbers = [[[1, 2]], [[3, 4, 5], [6, 7, 8, 9]]];
+
+        function printNumbers(numbers: %{type}) {
+            return numbers.flat(3).join(' ');
+        }
+
+        console.log(printNumbers(numbers));
+      ```
+
+    answers:
+      type: number[][][]

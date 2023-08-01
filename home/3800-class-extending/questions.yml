@@ -1,0 +1,46 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Сколько классов можно наследовать?
+    answers:
+      wrong:
+      - Зависит от типа класса
+      - Бесконечно
+      correct:
+      - Один
+
+  question-2:
+    type: answers
+    question: Что нужно сделать, если нужно наследоваться от двух разных классов?
+    answers:
+      wrong:
+      - Достаточно указать оба класса через запятую после ключевого слова `extends`
+      - Нужно создать дополнительный класс, который будет наследовать один из классов и возвращать объект второго класса
+      correct:
+      - Наследоваться от двух классов можно только в том случае, если один из классов наследуется от другого
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```typescript
+        class User {
+          constructor(%{type} username: string) {}
+
+          get name(): string {
+            return `User ${this.username}`;
+          }
+        }
+
+        class Admin extends User {
+          get name(): string {
+            return `Admin ${this.username}`;
+          }
+        }
+      ```
+
+    answers:
+      type: public

@@ -1,0 +1,71 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Какой тип будет находиться в переменной `result`?
+
+      ```typescript
+        const items = [1, 2, 3, 4];
+        const result = items.reduce((acc, item) => acc + item);
+    answers:
+      wrong:
+      - number[]
+      - undefined
+      - Невозможно определить
+      - never
+      correct:
+      - number
+
+  question-2:
+    type: answers
+    question: |
+      Что изменит замена `T` на тип `number | string` в коде ниже?
+
+      ```typescript
+        function sort<T>(item1: T, item2: T): 1 | -1 {
+          return item1 > item2 ? 1 : -1;
+        }
+
+        const nums = [3, 1, 2, 4];
+        nums.sort(); // => [1, 2, 3, 4] 
+        console.log(nums);
+
+        const names = ['John', 'Barbara', 'Isaac', 'Adam'];
+        names.sort();
+        console.log(names); // => ['Adam', 'Barbara', 'Isaac', 'John'] 
+      ```
+    answers:
+      wrong:
+      - |
+        В данном случае это ничего не изменит, функция уже может принимать строки и числа
+      - |
+        Функция сортировки не сможет работать с массивами
+      correct:
+      - |
+        Функция сортировки сможет принимать параметры разного типа: строку и число
+
+  question-3:
+    type: filling
+    question: |
+      Дополните код так, чтобы функция работала с любыми типами данных:
+
+    text: |
+
+      ```typescript
+
+        function reverse<T>(items: T[]): %{type} {
+          return items.reverse();
+        }
+
+        const nums = [3, 1, 2, 4];
+        const result1 = reverse(nums);
+        console.log(nums); // => [2, 4];
+
+        const names = ['John', 'Barbara', 'Isaac', 'Adam'];
+        const result2 = reverse(names);
+        console.log(result2); // => ["Adam", "Isaac", "Barbara", "John"]
+      ```
+
+    answers:
+      type: "T[]"

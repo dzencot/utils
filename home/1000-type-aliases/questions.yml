@@ -1,0 +1,31 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Что такое Type Alias в TypeScript?
+    answers:
+      wrong:
+      - Это способ создания нового типа данных
+      - Это способ объединения нескольких типов данных
+      correct:
+      - Это способ сокращенно записать определение типа
+
+  question-2:
+    type: answers
+    question: Можно ли использовать Type Alias для простых типов данных, например, чисел и строк?
+    answers:
+      wrong:
+      - Нет, нельзя
+      - Зависит от условий
+      correct:
+      - Да, можно
+
+  question-3:
+    type: answers
+    question: Можно ли использовать несколько Type Aliases для одного типа данных?
+    answers:
+      wrong:
+      - Нет, нельзя
+      - Зависит от условий
+      correct:
+      - Да, можно

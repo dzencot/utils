@@ -1,0 +1,30 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: Какой тип данных может быть возвращен из функции с возвращаемым типом unknown?
+    answers:
+      wrong:
+      - unknown
+      - undefined
+      correct:
+      - Любой тип данных
+
+  question-2:
+    type: answers
+    question: Какой результат будет получен при попытке присвоить значение типа string переменной с типом unknown?
+    answers:
+      wrong:
+      - Будет сгенерировано исключение во время выполнения программы
+      - Будет сгенерирована ошибка компиляции
+      correct:
+      - Присваивание значения будет выполнено без ошибок
+
+  question-3:
+    type: answers
+    question: Можно ли использовать тип unknown для описания типа возвращаемого значения?
+    answers:
+      wrong:
+      - нет, нельзя
+      correct:
+      - Да, можно

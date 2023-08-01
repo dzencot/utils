@@ -1,0 +1,64 @@
+---
+questions:
+  question-1:
+    type: answers
+    question: |
+      Как можно указать единственный тип данных для всех элементов кортежа?
+
+      ```
+        type Type = string;
+
+        const tuple: ? = ['first', 'second', 'third'];
+      ```
+
+    answers:
+      wrong:
+      - |
+        `[Type[]]`
+      - |
+        `[Type...]`
+      correct:
+      - |
+        `[Type, Type, Type]`
+
+  question-2:
+    type: answers
+    question: Можно ли задавать значения по умолчанию для элементов кортежа?
+    answers:
+      wrong:
+      - Нет
+      correct:
+      - Да
+
+  question-3:
+    type: answers
+    question: |
+      Как можно задать необязательный элемент для кортежа?
+
+      ```
+        let tuple: ? = ['Ivan', 'Ivanov', 28];
+        tuple = ['Petr', 'Petrov'];
+      ```
+
+    answers:
+      wrong:
+      - |
+        `[string, string]`
+      - |
+        `[string, string, number]`
+      correct:
+      - |
+        `[string, string, number?]`
+
+  question-4:
+    type: filling
+    question: |
+      Дополните код:
+    text: |
+
+      ```javascript
+        const point: [number, { city: %{type} }] = [101000, { city: 'Moscow' }];
+      ```
+
+    answers:
+      type: string
