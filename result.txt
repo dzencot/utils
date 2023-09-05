@@ -12,3 +12,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/php_oop_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_101_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_django_basics_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_flask_course
