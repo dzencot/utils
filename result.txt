@@ -5,3 +5,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/graphs_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/javascript_101_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/java_spring_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/js_basic_algorithms_course
