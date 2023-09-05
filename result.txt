@@ -14,3 +14,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_django_basics_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_flask_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_overview_of_web_development_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/python_setup_environment_course
