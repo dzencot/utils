@@ -4,7 +4,7 @@ EXERCISE_KIT_PATH="/home/ivan/projects/hexlet/hexlet-exercise-kit"
 LANGUAGE=$1
 
 CURPATH=$(pwd)
-COURSES=$(find "${EXERCISE_KIT_PATH}/exercises/ru" -maxdepth 1 -regex ".*-${LANGUAGE}-.*")
+COURSES=$(find "${EXERCISE_KIT_PATH}/exercises/en" -maxdepth 1 -regex ".*-${LANGUAGE}-.*")
 
 TEST_RESULT='error'
 

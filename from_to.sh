@@ -41,6 +41,7 @@ for i in $REPO_PATHS; do
 
   cp $CURRENT_EXERCISE_PATH $DESTINATION_PATH/$i -r
 
+  echo "curl -s --request POST --header \"PRIVATE-TOKEN: $TOKEN\" --url \"$API_URL?name=$i&namespace_id=$NAMESPACE_ID\""
   response=$(curl -s --request POST --header "PRIVATE-TOKEN: $TOKEN" --url "$API_URL?name=$i&namespace_id=$NAMESPACE_ID")
   url=$(echo "$response" | jq -r '.ssh_url_to_repo')
   echo URL: $url
