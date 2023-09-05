@@ -13,6 +13,9 @@ for COURSE_NAME in "${COURSES[@]}"; do
   # Скрипт принимает путь к директории курса, где нужно пофиксить имена
   # COURSE=$1
   COURSE="${COURSES_PATH}/${COURSE_NAME}"
+  cd $COURSE
+  git reset --hard
+  git pull
 
   LESSONS=$(ls -d -v ${COURSE}/*/)
   LESSONS=(${LESSONS/ / })
