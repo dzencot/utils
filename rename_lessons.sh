@@ -2,7 +2,7 @@
 
 function join { local IFS="$1"; shift; echo "$*"; }
 
-COURSES_PATH="/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru"
+COURSES_PATH="/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/en"
 CURPATH=$(pwd)
 
 COURSES=$(ls ${COURSES_PATH})
