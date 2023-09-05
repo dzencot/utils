@@ -3,3 +3,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/erlang_101_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/git_base_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/graphs_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/javascript_101_course
