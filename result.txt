@@ -18,3 +18,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/ruby_basics_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/ruby_setup_environment_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/sicp_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/testing_workflow_course
