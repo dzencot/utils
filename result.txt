@@ -8,3 +8,4 @@
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/js_basic_algorithms_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/js_prototypes_course
 /home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/layout_designer_basics_course
+/home/ivan/projects/hexlet/hexlet-exercise-kit/courses/ru/logic_course
