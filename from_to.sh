@@ -36,8 +36,11 @@ for i in $REPO_PATHS; do
 
   echo Current exercise path: $CURRENT_EXERCISE_PATH
 
+  git reset --hard
+  git clean -df
+
   git checkout main
-  git pull
+  git pull --rebase --autostash
 
   cp $CURRENT_EXERCISE_PATH $DESTINATION_PATH/$i -r
 
