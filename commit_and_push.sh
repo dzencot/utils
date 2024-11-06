@@ -18,6 +18,8 @@ for i in $REPO_PATHS; do
   git add .
   git commit -m "$COMMIT_NAME"
 
+  git pull --rebase --autostash
+
   git push
 
   sleep 2
